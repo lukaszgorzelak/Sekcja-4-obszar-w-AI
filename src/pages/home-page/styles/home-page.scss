@@ -1,0 +1,164 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+
+.home{
+    
+    @media all and (min-width: map-get($brakepoints, md)) and (max-width: map-get($brakepoints, xxl)) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-49%, -33%);
+    }
+
+    @media all and (min-width: map-get($brakepoints, xxl)){
+        display: flex;
+        justify-content: space-evenly;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .home__describe{
+        margin-bottom: 2.4rem;
+
+        @media all and (min-width: map-get($brakepoints, xs)) and (max-width: map-get($brakepoints, xxl)) {
+            display: grid;
+            justify-content: center;
+        }
+
+        @media all and (min-width: map-get($brakepoints, xxl)) {
+            margin-top: -40rem;
+            margin-left: -2.5rem;
+        }
+
+        .home__title{
+
+            color: var(--color-font);
+            text-align: left;
+            width: 34.3rem;
+            height: 8rem;
+            font-weight: 500;
+            font-size: 3.2rem;
+            line-height: 4rem;
+            margin-top: 4.8rem;
+            margin: 4.8rem 1.6rem 1.6rem 1.6rem;
+
+            @media all and (min-width: map-get($brakepoints, md)) {
+                width: 49rem;
+                height: 11.2rem;
+                font-size: 4.8rem;
+                line-height: 5.6rem;
+            }
+
+            @media all and (min-width: map-get($brakepoints, xxl)) {
+                width: 46.7rem;
+            }
+        }
+
+        .home__paragraph {
+            color: var(--color-font);
+            text-align: left;
+            width: 34.3rem;
+            height: 12rem;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            margin:0 1.6rem;
+
+            @media all and (min-width: map-get($brakepoints, md)) and (max-width: map-get($brakepoints, xxl)) {
+                width: 49.6rem;
+                height: 9.6rem;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+            }
+
+            @media all and (min-width: map-get($brakepoints, xxl)) {
+                width: 46.7rem;
+                margin-top: 2.4rem;
+            }
+        }
+
+    }
+
+    .home__card{
+        display: grid;
+        grid-template-columns: 34.3rem;
+        justify-content: flex-end;
+        grid-gap: 1.6rem;
+        margin-bottom:6.4rem;
+
+        @media all and (min-width: map-get($brakepoints, xs)) and (max-width: map-get($brakepoints, xxl)) {
+            display: grid;
+            justify-content: center;
+        }
+
+        @media all and (min-width: map-get($brakepoints, md)) and (max-width: map-get($brakepoints, xxl)) {
+            grid-template-columns: 24rem 24rem;
+        }
+
+        @media all and (min-width: map-get($brakepoints, xxl)) {
+            grid-template-columns: 26.8rem 26.8rem;
+            grid-gap: 2.4rem;
+            margin-left: -7.5rem;
+            margin-top: -5.5rem;
+        }
+
+        .card{
+            height: 19.6rem;
+            border-radius: 2rem;
+            background-color: #272D42;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media all and (min-width: map-get($brakepoints, md)) and (max-width: map-get($brakepoints, xxl)) {
+                height: 21.8rem;
+            }
+
+            @media all and (min-width: map-get($brakepoints, xxl)){
+                height: 24rem;
+            }
+
+            .card__img{
+                margin-top: 2rem;
+                width: 5.6rem;
+                height: 5.6rem;
+            }
+
+            .card__title{
+                color: var(--color-font);
+                font-weight: 500;
+                font-size: 2rem;
+                line-height: 2.4rem;
+
+                @media all and (min-width: map-get($brakepoints, xxl)){
+                    margin-top: 2.6rem
+                }
+            }
+
+            .card__paragraph{
+                color: var(--color-font);
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+                margin-top: -0.1rem;
+                width: 30.3rem;
+                height: 4.4rem;
+                opacity: 0.5;
+
+                @media all and (min-width: map-get($brakepoints, md)) and (max-width: map-get($brakepoints, xxl)) {
+                    width: 20.9rem;
+                    height: 6.6rem;
+                }
+
+                @media all and (min-width: map-get($brakepoints, xxl)){
+                    width: 23.6rem;
+                    height: 7.2rem;
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                }
+            }
+        }
+    }
+   
+}   

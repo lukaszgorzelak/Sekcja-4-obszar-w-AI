@@ -1,0 +1,20 @@
+/// Root Styles file
+/// Here we define all the root variables we need for our project.
+/// For examples see Material Design color system: https://m2.material.io/design/color/the-color-system.html
+
+:root {
+    --color-primary: #5721f2;
+    --color-on-surface: #000;
+    --color-body: #0F162D;
+    --color-font: #fff;
+}
+
+$brakepoints:(
+  xs:376px,
+  sm:580px,
+  md:834px,
+  lg:1000px,
+  xl:1200px,
+  xxl:1439px,
+  xxxl:1800px,
+)
